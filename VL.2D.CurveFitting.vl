@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="UEWzeLqIR1xNwQg1irexoM" LanguageVersion="2021.3.0.58" Version="0.128">
+<Document xmlns:p="property" Id="UEWzeLqIR1xNwQg1irexoM" Summary="Creates Beziér segments from 2D points" Authors="Matthias Husinsky" Credits="Bobby Fraser" ProjectUrl="https://github.com/mhusinsky/VL.2D.CurveFitting/" LanguageVersion="2021.3.0.58" Version="0.128">
   <NugetDependency Id="Dmi8oWCnYXxOlzjZaKIEmf" Location="VL.CoreLib" Version="2021.3.0-0058-g62182f8fd0" />
   <Patch Id="PuFtxAIP3CkLv3Jh53FcWk">
     <Canvas Id="UtY8jMjG4p1LrhXoYY6pBk" DefaultCategory="2D.CurveFitting" CanvasType="FullCategory">
