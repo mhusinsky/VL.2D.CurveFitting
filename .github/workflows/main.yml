@@ -8,6 +8,14 @@ on:
     paths-ignore:
       - README.md
 
+  # manual trigger     
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'     
+        required: true
+        default: 'manually triggered'
+
 jobs:
   build:
     runs-on: windows-latest
