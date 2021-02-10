@@ -1,7 +1,7 @@
 # VL.2D.CurveFitting
 Nodes to create Bezier lines from input points, which has great use for line smoothing. 
 
-Code is based on [Burningmeme.curves](https://gitlab.com/burningmime/curves/) by Bobby Fraser and highly performant.
+Code is based on [Burningmime.curves](https://gitlab.com/burningmime/curves/) by Bobby Fraser and highly performant.
 
 
 ## Using the library
