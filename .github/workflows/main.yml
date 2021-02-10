@@ -1,0 +1,27 @@
+name: push_nuget
+
+# on push on master
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - README.md
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - name: Git Checkout
+      uses: actions/checkout@master
+    
+    - name: Setup Nuget.exe
+      uses: nuget/setup-nuget@v1
+      
+    - name: Publish VL Nuget
+      uses: vvvv/PublishVLNuget@1.0.29
+      with:
+        nuspec: deployment\VL.2D.CurveFitting.nuspec
+        icon-src: https://raw.githubusercontent.com/mhusinsky/VL.2D.CurveFitting/master/deployment/nugeticon.png
+        icon-dst: ./deployment/nugeticon.png
+        nuget-key: ${{ secrets.NUGET_KEY }}
