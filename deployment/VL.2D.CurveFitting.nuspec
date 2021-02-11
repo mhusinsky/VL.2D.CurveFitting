@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
-    <id>VL.OpenCV</id>
+    <id>VL.2D.CurveFitting</id>
     <version>1.0.0-preview</version>
     <title>VL.2D.CurveFitting</title>
     <authors>Bobby Fraser, Matthias Husinsky</authors>
