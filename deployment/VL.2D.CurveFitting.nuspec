@@ -12,7 +12,7 @@
     <description>Curve fitting algorithms that take a bunch of 2D points and output bezier control points</description>
     <copyright>Bobby Fraser, Matthias Husinsky</copyright>
     <tags>VL, 2D, curves, Bezier, curve fitting, RDP, Ramer-Douglas-Pueker, resampling</tags>
-	<license type="expression">zlib</license>
+	<license type="expression">Zlib</license>
     <dependencies></dependencies>
   </metadata>
   <files>
