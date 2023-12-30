@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.2D.CurveFitting</id>
-    <version>1.0.1-preview</version>
+    <version>2.0.0</version>
     <title>VL.2D.CurveFitting</title>
     <authors>Bobby Fraser, Matthias Husinsky</authors>
     <owners></owners>
@@ -17,7 +17,7 @@
   </metadata>
   <files>
     <file src="..\*.vl" target="" exclude="" />
-    <file src="..\lib\net45\**" target="lib\net45\" exclude="" />
+    <file src="..\lib\netstandard2.1\**" target="lib\netstandard2.1\" exclude="" />
     <file src="..\help\**" target="help\" exclude="" />
     <file src="nugeticon.png" target="icon\" />
   </files>
