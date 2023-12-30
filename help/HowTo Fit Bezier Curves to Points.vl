@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="IrVfMu5jvNoL3lmuOiDXm3" LanguageVersion="2021.3.0.58" Version="0.128">
-  <NugetDependency Id="Pg3nD6JupSnM7nEUFupRK4" Location="VL.CoreLib" Version="2021.3.0-0058-g62182f8fd0" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="IrVfMu5jvNoL3lmuOiDXm3" LanguageVersion="2023.5.2" Version="0.128">
+  <NugetDependency Id="Pg3nD6JupSnM7nEUFupRK4" Location="VL.CoreLib" Version="2023.5.2" />
   <Patch Id="FfcuwHodEviNfnZkacU0ZE">
     <Canvas Id="CpipHY4SyJkNcWdNuwhJNN" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -16,7 +16,7 @@
       <Patch Id="NjNSmv1CdUZOT6txBtHtlV">
         <Canvas Id="PUry1c8yfw1NwK9QgSQaeR" CanvasType="Group">
           <Node Bounds="172,315,65,19" Id="Ox2RxWUQm5pPLXdF2koRxr">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Queue" />
             </p:NodeReference>
@@ -27,7 +27,7 @@
             <Pin Id="ENttcY4O4UCL0DH4mgR48o" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="139,114,85,19" Id="RJ8zVrrBc00OvA3iZwfW2b">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Console" />
             </p:NodeReference>
@@ -38,12 +38,12 @@
             <Pin Id="GftryeifRXMMrU3PhckQjr" Name="Notifications" Kind="OutputPin" />
           </Node>
           <Node Bounds="117,869,145,19" Id="FBRNh5Fo189LuC9ZOJBavD">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
             <Pin Id="Tn3p8JxuNpjOV2QpFIL7se" Name="Bounds" Kind="InputPin" DefaultValue="1036, 220, 600, 400">
-              <p:TypeAnnotation LastCategoryFullName="System.Windows" LastSymbolSource="VL.CoreLib.Windows.vl">
+              <p:TypeAnnotation LastCategoryFullName="System.Windows" LastDependency="VL.CoreLib.Windows.vl">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
             </Pin>
@@ -58,20 +58,22 @@
             <Pin Id="HBzHsrwUN8JLWkIqNNbmPq" Name="ClientBounds" Kind="OutputPin" />
             <Pin Id="MC7gyzrYQpROpeb59wap1A" Name="Render Time" Kind="OutputPin" />
           </Node>
-          <Node Bounds="137,826,269,19" Id="OHYCQUgR1CANMLQp9kXZxR">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
+          <Node Bounds="137,826,400,19" Id="OHYCQUgR1CANMLQp9kXZxR">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Group" />
             </p:NodeReference>
             <Pin Id="Se3euk9emkTMBX57fP0GzS" Name="Input" Kind="InputPin" />
             <Pin Id="PztMnUynZ0qOW1dY5q4g8o" Name="Input 2" Kind="InputPin" />
-            <Pin Id="N78Vd3oZ4w0MlMdyGj067a" Name="Output" Kind="OutputPin" />
             <Pin Id="BExmZnx7cmNOHFKEJK05u9" Name="Input 3" Kind="InputPin" />
             <Pin Id="UqCWvAQUurIOZ6bWFw1kLS" Name="Input 4" Kind="InputPin" />
             <Pin Id="AEXwOBt7UnxOMrramqyiGt" Name="Input 5" Kind="InputPin" />
+            <Pin Id="N9FJP561n8LP1D2JWDJFU8" Name="Debug" Kind="InputPin" />
+            <Pin Id="JhiX0tUdaLBOnkGMCjFgwB" Name="Enabled" Kind="InputPin" />
+            <Pin Id="N78Vd3oZ4w0MlMdyGj067a" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="172,166,185,19" Id="QVXBGEWIBr4Mt9cwMveuTE">
-            <p:NodeReference LastCategoryFullName="IO.Mouse" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="IO.Mouse" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Mouse" />
               <Choice Kind="ProcessAppFlag" Name="MouseState" />
@@ -84,18 +86,18 @@
             <Pin Id="FbUGyWikos8QExzYh0XZ8v" Name="Middle Pressed" Kind="OutputPin" />
             <Pin Id="ObywVkwNO8xQafnfINHrtY" Name="Right Pressed" Kind="OutputPin" />
             <Pin Id="TNe2h8G1uptQA0P3qr758h" Name="Normalized Position" Kind="OutputPin" />
-            <Pin Id="B3rT9CEzhXKPSZvhEuQMjG" Name="WheelDelta" Kind="OutputPin" />
+            <Pin Id="B3rT9CEzhXKPSZvhEuQMjG" Name="Wheel State" Kind="OutputPin" />
             <Pin Id="VAMIkZBCOqGNOB6yJ12DZV" Name="Client Area" Kind="OutputPin" />
             <Pin Id="Q66dwcS2JHJO2E0hwypiIj" Name="Sender" Kind="OutputPin" />
           </Node>
           <Node Bounds="167,788,85,19" Id="GbNI0vA2ETzQNPn5h2C4oi">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Points" />
             </p:NodeReference>
             <Pin Id="FKcXDTvbHyYMiz8xQowCkT" Name="Points" Kind="InputPin" />
             <Pin Id="MfqLXfBbjRBLjawsvJFPBk" Name="Size" Kind="InputPin" DefaultValue="0.05">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
@@ -104,19 +106,19 @@
             <Pin Id="TBLJIIuGqBvOGOC6IkaqkH" Name="Enabled" Kind="InputPin" />
             <Pin Id="G52Cit70QIiNr2R265hwjV" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="268,793,85,19" Id="Sru5EbOPFG4OVyezVMS3es">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
+          <Node Bounds="269,788,85,19" Id="Sru5EbOPFG4OVyezVMS3es">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Points" />
             </p:NodeReference>
             <Pin Id="AYOBLCmE92GOxujvZAAFZT" Name="Points" Kind="InputPin" />
             <Pin Id="MlVhXySyLSpQa6UmHXXJ17" Name="Size" Kind="InputPin" DefaultValue="0.04">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="PQJ8kgtELF7LzbdP2daWCf" Name="Shape" Kind="InputPin" DefaultValue="Square">
-              <p:TypeAnnotation LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
+              <p:TypeAnnotation LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
                 <Choice Kind="TypeFlag" Name="PointShape" />
               </p:TypeAnnotation>
             </Pin>
@@ -124,8 +126,8 @@
             <Pin Id="Csj6qhAOX9vPGET8yDIsRc" Name="Enabled" Kind="InputPin" />
             <Pin Id="BxgpctX7J8pPv6o2g6Bfac" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="312,754,45,19" Id="UyYK2XTMvtwMshxQCPv9FE">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastSymbolSource="VL.Skia.vl">
+          <Node Bounds="329,754,45,19" Id="UyYK2XTMvtwMshxQCPv9FE">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Fill" />
               <CategoryReference Kind="Category" Name="Paint" NeedsToBeDirectParent="true">
@@ -134,7 +136,7 @@
             </p:NodeReference>
             <Pin Id="J0jEUL1VjKFNnVCxFEokTe" Name="Input" Kind="InputPin" />
             <Pin Id="MR1bloowaEgMk6O5uGtYpz" Name="Color" Kind="InputPin" DefaultValue="1, 0, 0, 1">
-              <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="Color" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="RGBA" />
               </p:TypeAnnotation>
             </Pin>
@@ -142,7 +144,7 @@
             <Pin Id="PR93vf5tTBxLa7HJ11WJCM" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="256,239,56,19" Id="HOlW9epqixdQC51zZty3hd">
-            <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="TogEdge" />
             </p:NodeReference>
@@ -150,8 +152,8 @@
             <Pin Id="SRpoO2yAjstNo14bXvUt4G" Name="Up Edge" Kind="OutputPin" />
             <Pin Id="PR4WHFmLiCXPxH0gYZ05Nn" Name="Down Edge" Kind="OutputPin" />
           </Node>
-          <Node Bounds="401,790,302,19" Id="Jn5XFkmjphkO45oXnPJakM">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastSymbolSource="VL.Skia.vl">
+          <Node Bounds="451,781,302,19" Id="Jn5XFkmjphkO45oXnPJakM">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Layers" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DrawPath" />
             </p:NodeReference>
@@ -160,8 +162,8 @@
             <Pin Id="FAeFfCtiTVpLaWTAp1yKIV" Name="Enabled" Kind="InputPin" />
             <Pin Id="VIv5ErOh1KNQdAvSHK4G3o" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="550,753,105,19" Id="EFlbodIgX8APCuBGeU38PC">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastSymbolSource="VL.Skia.vl">
+          <Node Bounds="600,746,105,19" Id="EFlbodIgX8APCuBGeU38PC">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Stroke" />
             </p:NodeReference>
@@ -174,7 +176,7 @@
             <Pin Id="FZNWzch3s55O37rp8mIyEB" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="209,754,45,19" Id="CRyQuZlinEVPfzIMli0pOZ">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastSymbolSource="VL.Skia.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Paint" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Fill" />
               <CategoryReference Kind="Category" Name="Paint" NeedsToBeDirectParent="true">
@@ -183,7 +185,7 @@
             </p:NodeReference>
             <Pin Id="KkN6OMbyjKuPWvOe0wM6uo" Name="Input" Kind="InputPin" />
             <Pin Id="PSoIQCvpjBZPpmSJWETz7L" Name="Color" Kind="InputPin" DefaultValue="0, 0.46, 1, 1">
-              <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="Color" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="RGBA" />
               </p:TypeAnnotation>
             </Pin>
@@ -191,7 +193,7 @@
             <Pin Id="G48lRc1SlPLPgVu3aXO4GB" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="467,580,145,19" Id="IphSsw3JpSjPIvDXCSFIKP">
-            <p:NodeReference LastCategoryFullName="2D.CurveFitting" LastSymbolSource="VL.2D.CurveFitting.vl">
+            <p:NodeReference LastCategoryFullName="2D.CurveFitting" LastDependency="VL.2D.CurveFitting.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="FitCurves" />
             </p:NodeReference>
@@ -199,14 +201,14 @@
             <Pin Id="QZEEdxqBXmFOZnYYwsvK4Y" Name="Update" Kind="InputPin" />
             <Pin Id="FOjyNBJVGRKNrjSr3EWBSt" Name="Linearize" Kind="InputPin" />
             <Pin Id="OJx1Ewk2Jx5MncR29rP5zm" Name="Linear Distance" Kind="InputPin" DefaultValue="0.02">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Float32" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="KzoN0wLqqoVNr6c2x0Tk2I" Name="RDP Preprocess" Kind="InputPin" />
             <Pin Id="DTjCyT8StyjMshcf0U3KjP" Name="RDP Error" Kind="InputPin" />
             <Pin Id="HKUMq8oPsOlPdvXucCtXrq" Name="Remove Duplicates" Kind="InputPin" DefaultValue="True">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
@@ -214,16 +216,16 @@
             <Pin Id="GaTO8MpVOjsPCmWKUM4H8Q" Name="Bezier Segments" Kind="OutputPin" />
             <Pin Id="TYNca8VUjtgNL398rzUuuX" Name="Preprocessed Points" Kind="OutputPin" />
           </Node>
-          <Pad Id="Rg1oYv7oBG5QEbGHLkbLXn" Comment="Linearize" Bounds="507,263,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="Rg1oYv7oBG5QEbGHLkbLXn" Comment="Linearize" Bounds="507,263,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="HeUknVxcUPILqPNs0Kfmn0" Comment="RDP Preprocess" Bounds="550,354,35,31" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="HeUknVxcUPILqPNs0Kfmn0" Comment="RDP Preprocess" Bounds="550,354,35,31" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -231,7 +233,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="OenbygXnMs0QBt6Wam4cbV" Comment="RDP Error" Bounds="568,399,77,15" ShowValueBox="true" isIOBox="true" Value="0.004">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -241,8 +243,8 @@
               <p:stepsize p:Type="Single">0.01</p:stepsize>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UxYGZRoMl3mMPy3hfB5mJk" Comment="Linear Distance" Bounds="529,316,35,15" ShowValueBox="true" isIOBox="true" Value="0.13">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="UxYGZRoMl3mMPy3hfB5mJk" Comment="Linear Distance" Bounds="529,316,35,15" ShowValueBox="true" isIOBox="true" Value="0.11">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -251,8 +253,8 @@
               <p:precision p:Type="Int32">3</p:precision>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="HefxpduxheNMLTiN2nBiRV" Comment="Fit Max Error" Bounds="623,548,35,15" ShowValueBox="true" isIOBox="true" Value="0.01">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="HefxpduxheNMLTiN2nBiRV" Comment="Fit Max Error" Bounds="609,548,35,15" ShowValueBox="true" isIOBox="true" Value="0.01">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -261,15 +263,15 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="Fd8DQOASSkUOJOwxioh7p4" Comment="Remove Duplicates" Bounds="589,442,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="403,673,130,88" Id="BZG8BN8d0tbNEUF1eSsAuG">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+          <Node Bounds="439,666,130,89" Id="BZG8BN8d0tbNEUF1eSsAuG">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ProcessStatefulRegion" Name="Cache" />
               <FullNameCategoryReference ID="Primitive" />
@@ -280,8 +282,8 @@
             <Patch Id="MmQZbSlpeTmP3tVhbULLgl" ManuallySortedPins="true">
               <Patch Id="CgHTlsV4chDQDxE8IYRsQ4" Name="Create" ManuallySortedPins="true" />
               <Patch Id="CehMstsRHzzP5ILCyHCBoI" Name="Then" ManuallySortedPins="true" />
-              <Node Bounds="415,706,106,19" Id="NWzvyGyEKUHPYFVXf2kPYE">
-                <p:NodeReference LastCategoryFullName="Graphics.Skia.Paths" LastSymbolSource="VL.Skia.vl">
+              <Node Bounds="451,699,106,19" Id="NWzvyGyEKUHPYFVXf2kPYE">
+                <p:NodeReference LastCategoryFullName="Graphics.Skia.Paths" LastDependency="VL.Skia.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Skia" />
                   <Choice Kind="OperationCallFlag" Name="AddBezierSegments" />
@@ -291,12 +293,12 @@
                 <Pin Id="Eshg2O3zkNBNwGwM2mZmIK" Name="Output" Kind="OutputPin" />
               </Node>
             </Patch>
-            <ControlPoint Id="VzUu6bMiGaVOuu341SNB56" Bounds="518,680" Alignment="Top" />
-            <ControlPoint Id="ExrfOpCcfPIM01YPvY0L6P" Bounds="418,756" Alignment="Bottom" />
+            <ControlPoint Id="VzUu6bMiGaVOuu341SNB56" Bounds="554,672" Alignment="Top" />
+            <ControlPoint Id="ExrfOpCcfPIM01YPvY0L6P" Bounds="453,749" Alignment="Bottom" />
           </Node>
           <Overlay Id="U7RQY6Ilk8ZNAl7bjPQknJ" Name="Point Preprocessing Options" Bounds="470,189,468,316" />
           <Pad Id="FKxoBchDNNwNNyOLd6av7l" Bounds="737,243,186,203" ShowValueBox="true" isIOBox="true" Value="Used to remove/add points from the input for better processing.&#xD;&#xA;&#xD;&#xA;it usually does not make sense to use more than one preprocessor.&#xD;&#xA;&#xD;&#xA;Play around with the respective parameters to optimize for your application.">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -305,7 +307,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="G9F8ip9NLNtN1tSNz7ejOj" Bounds="462,55,341,108" ShowValueBox="true" isIOBox="true" Value="Paint on the renderer using left mouse button.&#xD;&#xA;&#xD;&#xA;Blue points are the sampled mouse positions.&#xD;&#xA;Red squares are the preprocessed points.&#xD;&#xA;The white line are the resulting Beziér segments.">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -314,7 +316,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="NGK9KzA6UuDOPvD6tIhmGZ" Bounds="1091,250,428,44" ShowValueBox="true" isIOBox="true" Value="Creates a list of equally spaced points that lie on the path described by straight line segments between adjacent points in the source list.">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -323,7 +325,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="DSf95b6lw0WOPaKirAKnj7" Bounds="1091,103,444,97" ShowValueBox="true" isIOBox="true" Value="Removes any repeated points (that is, one point extremely close to the previous one). The same point can appear multiple times just not right after one another. This does not modify the input list. If no repeats were found, it returns the input list; otherwise it creates a new list with the repeats removed.">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -332,7 +334,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="Ia8YZw1rLtCNTQHfFmo5iQ" Bounds="1091,372,678,126" ShowValueBox="true" isIOBox="true" Value="Reduces a set of line segments by removing points that are too far away. The image says it better than I could ever describe: http://upload.wikimedia.org/wikipedia/commons/3/30/Douglas-Peucker_animated.gif &#xD;&#xA;&#xD;&#xA;The wiki article: http://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithmBased on: http://www.codeproject.com/Articles/18936/A-Csharp-Implementation-of-Douglas-Peucker-Line-Ap">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -341,7 +343,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="KF5mO8LKTjoMu07fvAaJPu" Bounds="1091,558,514,258" ShowValueBox="true" isIOBox="true" Value="Attempts to fit a set of Bezier curves to the given data. It returns a set of curves that form a Beziér curve with C1 continuity (that is, each curve's start point is coincident with the previous curve's end point, and the tangent vectors of the start and end points are going in the same direction, so the curves will join up smoothly). Returns an empty array if less than two points in input.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Input data MUST not contain repeated points (that is, the same point twice in succession). The best way to ensure this is to call any one of the methods in CurvePreprocess, since all three pre-processing methods will remove duplicate points. If repeated points are encountered, unexpected behavior can occur.">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -350,7 +352,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="EuRCGyuIeQPQM0ndysU5ML" Bounds="1091,75,176,25" ShowValueBox="true" isIOBox="true" Value="Remove Duplicates">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -359,7 +361,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="SqCyCM3d905L1uV2B2ZXFd" Bounds="1091,224,176,25" ShowValueBox="true" isIOBox="true" Value="Linear Distance">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -368,7 +370,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="UHWhW6zKSWPPZD9qbwBvzM" Bounds="1091,344,176,25" ShowValueBox="true" isIOBox="true" Value="RDP Preprocess">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -377,7 +379,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="H1zivSIoBSnOLwOHTj8IpR" Bounds="1091,525,176,25" ShowValueBox="true" isIOBox="true" Value="Fit Curves">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -386,7 +388,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="O3K2GYTu5M3LcRAVimoyDr" Bounds="938,346,123,19" ShowValueBox="true" isIOBox="true" Value="detailled info ---&gt;">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -431,7 +433,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="PJcKKrFVSuRLquoZx88ZBl" Location="VL.CoreLib" Version="2021.3.0-0058-g62182f8fd0" />
-  <NugetDependency Id="PzlNkI4q5oEM6WeTRC73pg" Location="VL.Skia" Version="2021.3.0-0058-g62182f8fd0" />
+  <NugetDependency Id="PJcKKrFVSuRLquoZx88ZBl" Location="VL.CoreLib" Version="2023.5.2" />
+  <NugetDependency Id="PzlNkI4q5oEM6WeTRC73pg" Location="VL.Skia" Version="2023.5.2" />
   <DocumentDependency Id="ETQwgCX12kwOcm8ApHdJci" Location="../VL.2D.CurveFitting.vl" />
 </Document>
